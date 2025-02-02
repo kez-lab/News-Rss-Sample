@@ -45,6 +45,7 @@ gen-external-apklibs
 ### Kotlin ###
 # Compiled class file
 *.class
+.kotlin
 
 # Log file
 

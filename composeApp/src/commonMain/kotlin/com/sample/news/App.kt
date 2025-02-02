@@ -41,8 +41,9 @@ fun NewsCrawlingScreen() {
     LaunchedEffect(Unit) {
         withTimeoutOrNull(5000) {
             try {
-                newsData = fetchRssFeed("https://www.yonhapnewstv.co.kr/browse/feed")
+                newsData = fetchRssFeed("https://corsproxy.io/?url=https://www.yonhapnewstv.co.kr/browse/feed")
             } catch (e: Exception) {
+                println(e)
                 errorMessage = e.message
             } finally {
                 isLoading = false
